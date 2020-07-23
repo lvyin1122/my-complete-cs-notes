@@ -193,5 +193,47 @@ setInterval(tick, 1000);
 
 Add state to the Clock component to let it update itself
 
-bookmark: https://reactjs.org/docs/state-and-lifecycle.html
+Converting a Function to a Class
+
+```js
+class Clock extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>Hello, world!</h1>
+        <h2>It is {this.props.date.toLocaleTimeString()}.</h2>
+      </div>
+    )
+  }
+}
+```
+
+Adding Local State to a Class
+
+```js
+class Clock extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {date: new Date()};
+  }
+  
+  render() {
+    return (// replace props with state
+      <div>
+        <h1>Hello, world!</h1>
+        <h2>It is {this.state.date.toLocaleTimeString()}.</h2> 
+      </div>
+    )
+  }
+}
+
+ReactDOM.render(
+  <Clock />,  // remove date prop
+  document.getElementById('root')
+);
+```
+
+Adding Lifecycles Methods to a Class
+
+
 
