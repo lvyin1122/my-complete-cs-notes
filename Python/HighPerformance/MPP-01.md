@@ -63,3 +63,5 @@ PROFILER: 'c_return' <built-in function print>
 PROFILER: 'return' None
 ```
 
+### statistical profiling
+
