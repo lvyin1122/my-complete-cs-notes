@@ -1,0 +1,13 @@
+vim ~/.bashrc
+
+function g() {
+    log=$1 files=$2
+    if [ ! -n "$files" ] then
+        files="."
+    fi
+    git add "$2"
+    git commit -m "$1"
+    git push
+}
+
+source ~/.bashrc
