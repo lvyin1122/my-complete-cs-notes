@@ -2,7 +2,7 @@
 
 📚 To archive all my CS notes.
 
-🏝 Feel free to use as references or share your ideas.
+🏝 Feel free to reference or share your ideas.
 
 ### Current progress:
 
