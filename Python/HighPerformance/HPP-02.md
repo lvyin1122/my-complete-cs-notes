@@ -2,3 +2,7 @@
 
 # Lists and Tuples
 
+List - dynamic arrays
+
+Tuple - static arrays
+
