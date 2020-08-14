@@ -80,8 +80,61 @@ for name, cc, pop, (latitude, longitude) in metro_areas:
         print(fmt.format(name, latitude, longitude))
 ```
 
-Named Tuples
+## Named Tuples
 
 ```python
+from collections import namedtuple
+City = namedtuple('City', 'name country population coordinates')
+tokyo = City('Tokyo', 'JP', 36.933, (35.689722, 139.691667))
+
+tokyo.population
+tokyo.coordinates
+tokyo[1]
+```
 
 ```
+City._fields
+City._make(delhi_data)
+delhi._asdict() # returns a collections.OrderedDict built from the named tuple instance
+```
+
+## Tuples as Immutable Lists
+
+Omitted 
+
+## Slicing 
+
+advanced forms of slicing 
+
+why slices and range exclude the last item: easy to see ...
+
+## Slice Objects
+
+```python
+s[::3]
+s[::-1]
+s[::-2]
+```
+
+`[start:stop:step]` 
+
+### To parse flat-file data
+
+Omitted
+
+## Multidimensional Slicing and Ellipsis
+
+Ellipsis object
+
+## Assigning to Slices
+
+```python
+l = list(rang(0, 10))
+l[2:5] = [4, 10]
+del l[1:2]
+```
+
+## Augmented Assignment with Sequences
+
++= *=
+
