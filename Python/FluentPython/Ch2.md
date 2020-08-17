@@ -138,3 +138,15 @@ del l[1:2]
 
 += *=
 
+## list.sort() and sorted
+
+.sort() => inplace sorting
+sorted => new object
+
+```
+sorted(fruits, reverse=True)
+sorted(fruits, key=len)
+```
+
+
+
