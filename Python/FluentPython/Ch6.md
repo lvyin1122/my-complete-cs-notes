@@ -2,3 +2,5 @@
 
 ## Case study: refactoring study
 
+### Classic strategy
+
