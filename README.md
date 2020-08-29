@@ -1,13 +1,24 @@
-# my-complete-cs-notes
+# My Complete CS Notes
+
+📚 To archive all my CS notes.
+
+🏝 Feel free to reference or share your ideas.
 
 ### Current progress:
 
-2020-07-24
+`2020-07-24`
 - Reading React docs.
 - High performance python: profiling
 
-### Content
+### Tree
 
-- JavaScript
-- Python
-- React
+```
+├─JavaScript
+├─Python
+│  ├─HighPerformance
+│  └─SimPy
+├─React
+├─UtilityScripts
+└─__resources
+```
+
