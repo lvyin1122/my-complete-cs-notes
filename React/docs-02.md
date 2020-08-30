@@ -246,20 +246,10 @@ class Clock extends React.Component {
   }
 
   componentDidMount() {
-    this.timerID = setInterval(
-      () => this.tick(),
-      1000
-    );
+  
   }
 
   componentWillUnmount() {
-    clearInterval(this.timerID);
-  }
-
-  tick(){
-    this.setState({
-      date: new Date()
-    });
   }
 
   render() {
@@ -270,50 +260,6 @@ class Clock extends React.Component {
       </div>
     );
   }
-}
-```
-
-Using State Correctly
-
-```js
-// Correct
-this.setState({comment: 'Hello'});
-```
-
-```js
-// Same
-// Correct
-this.setState(function(state, props) {
-  return {
-    counter: state.counter + props.increment
-  };
-});
-```
-
-State Updates are Merged
-
-
-```js
-constructor(props) {
-  super(props);
-  this.state = {
-    posts: [],
-    comments: []
-  };
-}
-
-componentDidMount() {
-  fetchPosts().then(response => {
-    this.setState({
-      posts: response.posts
-    });
-  });
-
-  fetchComments().then(response => {
-    this.setState({
-      comments: response.comments
-    });
-  });
 }
 ```
 
