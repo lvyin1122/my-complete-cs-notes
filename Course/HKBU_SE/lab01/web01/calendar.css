@@ -1,0 +1,40 @@
+th {
+    background-color: lightsteelblue;
+    width: 50px;
+}
+
+td {
+    height: 40px;
+
+    border-style: solid;
+    border-width: 3px;
+    border-color: darkgray;
+
+    text-align: right;
+    vertical-align: top;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+caption {
+    color: darkmagenta;
+    text-transform: uppercase;
+
+    font-family: Arial;
+    font-weight: 900;
+}
+
+#herbal {
+    width: 250px;
+    height: 250px;
+}
+
+.sundays {
+    color: firebrick
+}
+
+#bookmark {
+    text-align: center;
+}
